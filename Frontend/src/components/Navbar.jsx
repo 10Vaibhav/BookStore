@@ -31,12 +31,12 @@ const Navbar = () => {
           </Link>
 
           {/* Search Input */}
-          <div className="relative sm:w-72 w-40 space-x-2">
-            <IoSearchOutline className="absolute inline-block left-3 inset-y-2" />
+          <div className="relative sm:w-72 w-50 space-x-2">
+            <IoSearchOutline className="absolute inline-block left-3 inset-y-2 mr-2" />
             <input
               type="text"
               placeholder="Search here"
-              className="bg-[#EAEAEA] w-full py-1 md:px-8 px-6 rounded-md focus:outline-none"
+              className="bg-[#EAEAEA] w-full py-1 md:px-8 px-6 ml-2 rounded-md focus:outline-none"
             />
           </div>
         </div>
