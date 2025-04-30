@@ -24,15 +24,26 @@ const cartSlice = createSlice({
         });
       } else {
         Swal.fire({
-          text: "Item is already exist!",
+          title: "Item is already exist!",
           icon: "warning",
           showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Ok!"
         })
       }
     },
+
+    removeCart: (state, action) => {
+      state.cartItems = state.cartItems.filter((item) => item._id !== action.payload._id);
+    },
+
+    clearCart: (state) => {
+      state.cartItems = [];
+    }
   },
 });
 
 // export the actions
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeCart, clearCart } = cartSlice.actions;
 export default cartSlice.reducer;
