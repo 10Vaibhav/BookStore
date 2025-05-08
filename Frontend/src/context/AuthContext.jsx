@@ -47,6 +47,7 @@ export const AuthProvider = ({children}) => {
                 const userData = {
                     email, username: displayName, photo: photoURL,
                 }
+                console.log(userData);
             }
         })
 
@@ -55,6 +56,7 @@ export const AuthProvider = ({children}) => {
 
     const value = {
         currentUser,
+        loading,
         registerUser,
         loginUser,
         signInWithGoogle,
