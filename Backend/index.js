@@ -19,6 +19,8 @@ app.use(cors({
 const bookRoutes = require("./src/books/book.route");
 app.use("/api/books", bookRoutes);
 
+const orderRoute = require("./src/orders/order.route");
+app.use("/api/orders", orderRoute);
 
 // DB Connection
 async function main(){
