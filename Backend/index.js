@@ -15,12 +15,15 @@ app.use(cors({
     credentials: true
 }))
 
-// routes
-const bookRoutes = require("./src/books/book.route");
-app.use("/api/books", bookRoutes);
 
+const userRoutes = require("./src/users/user.route");
+const bookRoutes = require("./src/books/book.route");
 const orderRoute = require("./src/orders/order.route");
+
+// routes
+app.use("/api/books", bookRoutes);
 app.use("/api/orders", orderRoute);
+app.use("/api/auth", userRoutes);
 
 // DB Connection
 async function main(){
