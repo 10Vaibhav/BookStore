@@ -85,7 +85,7 @@ const Navbar = () => {
                       <li>
                         <button
                         onClick={handleLogOut}
-                        className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100">Logout</button>
+                        className="block w-full text-left px-4 py-2 text-sm cursor-pointer hover:bg-gray-100">Logout</button>
                       </li>
                     </ul>
                   </div>
