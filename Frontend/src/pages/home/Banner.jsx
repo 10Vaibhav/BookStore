@@ -20,7 +20,7 @@ const Banner = () => {
           to captivating memories, this week's new releases offer something for
           everyone
         </p>
-        <button className="btn-primary">Subscribe</button>
+        <button className="btn-primary">Let's Go </button>
       </div>
     </div>
   );

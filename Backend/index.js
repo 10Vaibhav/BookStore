@@ -10,6 +10,7 @@ const mongoose = require("mongoose");
 
 // middleware
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use(cors({
     origin: ["http://localhost:5173"],
     credentials: true
@@ -19,11 +20,13 @@ app.use(cors({
 const userRoutes = require("./src/users/user.route");
 const bookRoutes = require("./src/books/book.route");
 const orderRoute = require("./src/orders/order.route");
+const adminRoutes = require("./src/stats/admin.stats")
 
 // routes
 app.use("/api/books", bookRoutes);
 app.use("/api/orders", orderRoute);
 app.use("/api/auth", userRoutes);
+app.use("/api/admin",adminRoutes);
 
 // DB Connection
 async function main(){

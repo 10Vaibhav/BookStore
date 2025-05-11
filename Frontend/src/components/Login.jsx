@@ -88,7 +88,7 @@ const Login = () => {
           Haven't an account? Please{" "}
           <Link
             to="/register"
-            className="cursor-pointer text-blue-500 text-blue-700"
+            className="cursor-pointer text-blue-500 hover:text-blue-700"
           >
             Register
           </Link>
