@@ -1,6 +1,6 @@
 import React from 'react'
 import footerLogo from "../assets/footer-logo.png"
-import {FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa"
+import {FaTwitter} from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -47,11 +47,7 @@ const Footer = () => {
 
             {/* right side - social icons */}
             <div className='flex gap-6'>
-                <a href="https://facebook.com" target='_blank' rel='noopener noreferrer' className='hover:text-primary'><FaFacebook size={24}/></a>
-
                 <a href="https://twitter.com" target='_blank' rel='noopener noreferrer' className='hover:text-primary'><FaTwitter size={24}/></a>
-
-                <a href="https://instagram.com" target='_blank' rel='noopener noreferrer' className='hover:text-primary'><FaInstagram size={24}/></a>
             </div>
         </div>
     </footer>
